@@ -1,0 +1,83 @@
+#news {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#news #news-title {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+#news #news-title h1 {
+  color: #eee;
+}
+
+#news #news-title img {
+  width: 40px;
+  height: 40px;
+}
+
+#news svg {
+  margin: auto;
+}
+
+#news .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(11, 91, 128, 0.4);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: #eee;
+  cursor: pointer;
+}
+
+#news .article:hover {
+  background-color: rgba(37, 146, 197, 0.5);
+}
+
+#news .article h2 a {
+  margin: 5px 0px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#news .article h2 a:hover {
+  color: #434297;
+}
+
+#news .article p {
+  margin: 15px 0px 5px 0px;
+  font-size: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=news.css.map */

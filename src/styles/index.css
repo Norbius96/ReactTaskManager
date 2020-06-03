@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  --bg: #fcfcfc;
+  --bg-nav: #ebebeb;
+  --bg-list-item: #e0dfdf;
+  --color-headings: #0077ff;
+  --color-text: #333333;
+  --success: #17b978;
+  --primary: #035fc8;
+  --bg-popup: #d4dadd;
+  --error: #d72323;
+  --detail-bg: rgb(204, 199, 199);
+}
+
+html[data-theme="dark"] {
+  --bg: #333333;
+  --bg-nav: #434343;
+  --bg-list-item: #4b4b4b;
+  --bg-popup: #828485;
+  --color-headings: #3694ff;
+  --color-text: #b5b5b5;
+  --detail-bg: rgb(126, 117, 117);
+}
+
+h1 {
+  color: var(--color-text);
+}
+
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *:before,
+html.theme-transition *:after {
+  -webkit-transition: all 500ms !important;
+  transition: all 500ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+}
+
+body {
+  background-color: var(--bg);
+  padding: 8vh 0px 0px 0px;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App #left {
+  width: 50%;
+  padding: 5px 5px 5px 20px;
+}
+
+.App #right {
+  position: fixed;
+  right: 0px;
+  width: 50%;
+  overflow: hidden;
+  max-height: 90%;
+  overflow-y: auto;
+  padding: 5px 20px 5px 5px;
+  -ms-overflow-style: none;
+}
+
+.App #right::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .App {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App #left {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .App #right {
+    width: 100%;
+    padding: 0px 10px;
+    position: initial;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

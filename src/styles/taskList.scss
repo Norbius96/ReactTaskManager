@@ -1,0 +1,45 @@
+.task {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--bg-list-item);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s linear;
+    word-break: break-all;
+    word-wrap: break-word;
+    &:hover {
+        transform: scale(0.99);
+    }
+    p {
+        padding: 15px;
+        color: #818181;
+        font-size: 12px;
+    }
+    h1 {
+        margin: auto;
+        padding: 15px;
+        width: 100%;
+        font-size: 20px;
+        cursor: auto;
+    }
+    .icons {
+        cursor: pointer;
+        padding: 15px;
+        color: var(--color-text);
+        z-index: 2;
+        transition: 0.3s ease;
+        align-self: flex-end;
+        &:hover {
+            color: var(--error);
+        }
+    }
+}
+.success {
+    border-left: 10px solid var(--success);
+}
+.primary {
+    border-left: 10px solid var(--primary);
+}

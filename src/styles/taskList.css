@@ -1,0 +1,62 @@
+.task {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--bg-list-item);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.task:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.task p {
+  padding: 15px;
+  color: #818181;
+  font-size: 12px;
+}
+
+.task h1 {
+  margin: auto;
+  padding: 15px;
+  width: 100%;
+  font-size: 20px;
+  cursor: auto;
+}
+
+.task .icons {
+  cursor: pointer;
+  padding: 15px;
+  color: var(--color-text);
+  z-index: 2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.task .icons:hover {
+  color: var(--error);
+}
+
+.success {
+  border-left: 10px solid var(--success);
+}
+
+.primary {
+  border-left: 10px solid var(--primary);
+}
+/*# sourceMappingURL=taskList.css.map */

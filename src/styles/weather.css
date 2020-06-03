@@ -1,0 +1,36 @@
+#weather {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 20px 27px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f83600), to(#f9d423));
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+#weather h1 {
+  color: #543210;
+  width: 50%;
+}
+
+#weather svg {
+  margin: auto;
+}
+
+#weather img {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=weather.css.map */

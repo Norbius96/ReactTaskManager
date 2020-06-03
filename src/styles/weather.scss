@@ -1,0 +1,24 @@
+#weather {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 20px 27px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+    word-break: break-all;
+    word-wrap: break-word;
+    h1{
+        color: #543210;
+        width: 50%;
+    }
+    svg{
+        margin:auto;
+    }
+    img{
+        width:50px;
+        height:50px;
+    }
+}
